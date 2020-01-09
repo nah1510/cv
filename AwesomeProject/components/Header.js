@@ -9,9 +9,9 @@ import{
 
 const Header = () =>{
     return (
-        <view style={styles.container}>
+        <View style={styles.container}>
             
-        </view>
+        </View>
     )
 }
 export default Header;

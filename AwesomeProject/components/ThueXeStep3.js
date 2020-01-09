@@ -16,7 +16,7 @@ const Step3 = () =>{
     return (
         <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
-        
+        <Text>Step3 nè </Text>
         
         <Text style={styles.text}>Khoảng cách</Text>
         <View style={{alignItems:'center'}}>
