@@ -17,23 +17,49 @@ const Step4 = () =>{
         <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
         <View style={{alignItems:'center'}}>
+            <Image style={styles.img} source={require('./../img/anh.jpg')}/>
+        </View>
+        <Text style={styles.text}>Tên tài xế</Text>
+        <View style={{alignItems:'center'}}>
+        
          <TextInput style = {styles.input}
                underlineColorAndroid = "transparent"
                placeholderTextColor = "#9a73ef"
                autoCapitalize = "none"
-               placeholder = "8 Km"
+               placeholder = "Nguyễn Văn A"
                  editable = {false}/>
-            
+            </View>
+            <Text style={styles.text}>Số điện thoại</Text>
+        <View style={{alignItems:'center'}}>
+        <TextInput style = {styles.input}
+               underlineColorAndroid = "transparent"
+               placeholderTextColor = "#9a73ef"
+               autoCapitalize = "none"
+               placeholder = "0123456789"
+                 editable = {false}/>
+            </View>
+            <Text style={styles.text}>Thời gian</Text>
+        <View style={{alignItems:'center'}}>
+        
+         <TextInput style = {styles.input}
+               underlineColorAndroid = "transparent"
+               placeholderTextColor = "#9a73ef"
+               autoCapitalize = "none"
+               placeholder = "15:30"
+                 editable = {false}/>
+            </View>
+            <Text style= {styles.text}>Thông tin thêm</Text>
+            <View style={{alignItems:'center'}}>
             <TextInput style = {styles.input}
                underlineColorAndroid = "transparent"
-               placeholder = "20.000 VND"
+               placeholder = "Thông tin thêm"
                placeholderTextColor = "#9a73ef"
                autoCapitalize = "none"
                editable = {false}/>
 
             <View style={{flexDirection: 'row',marginTop:30}}>
                 <View style={{flex:1 , marginRight:10}} >
-                    <Button title="Hủy" color = "#ff8d1e" onPress={() => Actions.Step2()}></Button>
+                    <Button title="Trở về" color = "#ff8d1e" onPress={() => Actions.Step2()}></Button>
                 </View>
                 <View style={{flex:1}} >
                     <Button title="Đặt xe" color = "#5cb85c" onPress={() => Actions.Step4()}></Button>
@@ -58,7 +84,7 @@ const styles = StyleSheet.create({
     input:{
         backgroundColor:'#ebecee',
         width:350,
-        marginTop:20,
+        marginTop:5,
         borderRadius: 10,
     },
     Vcheckbox:{
@@ -79,5 +105,15 @@ const styles = StyleSheet.create({
       },
       scrollView:{
     
+      },
+      text:{
+          marginTop:15,
+          fontSize:18,
+      },
+      img:{
+        borderRadius:40,
+        height:80,
+        width:80,
+
       }
 })
