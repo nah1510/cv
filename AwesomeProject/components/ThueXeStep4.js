@@ -1,54 +1,51 @@
 import React, { Component } from 'react';
 import { Actions } from 'react-native-router-flux';
+
+
 import {
-    StyleSheet,
-    View,
-    Text,
-    Image,
-    ScrollView,
-    Button,
-    TextInput,
-    CheckBox
-  } from 'react-native';
-const InputIndex = () =>{
+  StyleSheet,
+  View,
+  Text,
+  Image,
+  ScrollView,
+  TextInput,
+  Button
+} from 'react-native';
+
+const Step4 = () =>{
     return (
+        <View style={styles.container}>
+        <ScrollView style={styles.scrollView}>
         <View style={{alignItems:'center'}}>
          <TextInput style = {styles.input}
                underlineColorAndroid = "transparent"
-               placeholder = "Địa điểm đón"
                placeholderTextColor = "#9a73ef"
-               autoCapitalize = "none"/>
+               autoCapitalize = "none"
+               placeholder = "8 Km"
+                 editable = {false}/>
             
             <TextInput style = {styles.input}
                underlineColorAndroid = "transparent"
-               placeholder = "Địa điểm đến"
+               placeholder = "20.000 VND"
                placeholderTextColor = "#9a73ef"
-               autoCapitalize = "none"/>
+               autoCapitalize = "none"
+               editable = {false}/>
 
-            <TextInput style = {styles.input}
-               underlineColorAndroid = "transparent"
-               placeholder = "Thời gian"
-               placeholderTextColor = "#9a73ef"
-               autoCapitalize = "none"/>
-
-                <TextInput style = {styles.input}
-               underlineColorAndroid = "transparent"
-               placeholder = "Thông tin thêm"
-               placeholderTextColor = "#9a73ef"
-               autoCapitalize = "none"/>
             <View style={{flexDirection: 'row',marginTop:30}}>
                 <View style={{flex:1 , marginRight:10}} >
-                    <Button title="Trở về" color = "#ff8d1e" onPress={() => Actions.Step3()}></Button>
+                    <Button title="Hủy" color = "#ff8d1e" onPress={() => Actions.Step2()}></Button>
                 </View>
                 <View style={{flex:1}} >
-                    <Button title="Bước kế tiếp" color = "#5cb85c" onPress={() => Actions.Step3()}></Button>
+                    <Button title="Đặt xe" color = "#5cb85c" onPress={() => Actions.Step4()}></Button>
                 </View>
             </View>
         </View>
+        </ScrollView>
+      </View>
         
     )
 }
-export default InputIndex;
+export default Step4;
 
 const styles = StyleSheet.create({
     img:{
@@ -72,5 +69,15 @@ const styles = StyleSheet.create({
         backgroundColor:"#ff8d1e",
         marginRight:30,
 
-    }
+    },
+    container: {
+        flex: 1,
+        backgroundColor:"white",
+    
+        alignItems:'center',
+    
+      },
+      scrollView:{
+    
+      }
 })

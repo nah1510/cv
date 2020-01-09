@@ -13,6 +13,7 @@ import {
 const InputIndex = () =>{
     return (
         <View style={{alignItems:'center'}}>
+
          <TextInput style = {styles.input}
                underlineColorAndroid = "transparent"
                placeholder = "Họ và tên"
