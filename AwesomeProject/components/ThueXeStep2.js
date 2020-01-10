@@ -14,7 +14,6 @@ const Step2 = () =>{
     return (
         <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
-        <Text>Step2 nè </Text>
         <InputIndex/>
         </ScrollView>
       </View>

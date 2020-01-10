@@ -10,7 +10,7 @@ import{
 const Header = () =>{
     return (
         <View style={styles.container}>
-            
+            <Text>Hello</Text>
         </View>
     )
 }
