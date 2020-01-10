@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     head:{
        flexDirection:'row', 
        flexWrap:'wrap',
+       marginTop:10,
     },
     headtxt:{
         fontSize:30,

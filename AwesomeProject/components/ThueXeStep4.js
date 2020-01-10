@@ -37,7 +37,7 @@ class Step4 extends Component{
     return (
         <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
-        <View style={{alignItems:'center'}}>
+        <View style={{alignItems:'center',marginTop:30}}>
             <Image style={styles.img} source={require('./../img/anh.jpg')}/>
         </View>
         <Text style={styles.text}>Tên tài xế</Text>

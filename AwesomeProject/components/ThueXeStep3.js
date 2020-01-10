@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Actions } from 'react-native-router-flux';
-
+import TitleIndex from './TitleThueXeInDex'
 
 import {
   StyleSheet,
@@ -15,7 +15,8 @@ import {
 const Step3 = () =>{
     return (
         <View style={styles.container}>
-        <ScrollView style={styles.scrollView}>     
+        <ScrollView style={styles.scrollView}>  
+        <TitleIndex/>   
         <Text style={styles.text}>Khoảng cách</Text>
         <View style={{alignItems:'center'}}>
          <TextInput style = {styles.input}

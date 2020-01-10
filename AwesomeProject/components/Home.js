@@ -13,26 +13,7 @@ import {
   Button
 } from 'react-native';
 
-class Step5 extends Component{
-    state = {
-        isModalVisible: false
-    };
-    toggleModal = () => {
-        this.setState({isModalVisible: !this.state.isModalVisible});
-    }
-    componentWillUnMount() {
-        this.setState({isModalVisible: false})
-    }
-    handleBackToHome() {
-        this.setState({isModalVisible: false})
-        Actions.Home();
-       
-    }
-    handleToHistory() {
-        this.setState({isModalVisible: false})
-        Actions.history();
-       
-    }
+class Home extends Component{
     render() {
     return (
         <View style={styles.container}>
@@ -40,16 +21,17 @@ class Step5 extends Component{
 
         <View style={{ flex: 1, justifyContent:'center',marginTop:30}}>
                         <View style={{alignItems:'center'}}>
-                            <Image style={styles.img} source={require('./../img/success.png')}/>
+                            <Image style={styles.img} source={require('./../img/HomeStayIconSmall.png')}/>
                         </View>
-                            <Text style={{textAlign:'center', margin: 7}}>Chúc mừng bạn đã đặt xe thành công !</Text>
-                            <Text style={{textAlign:'center', margin: 7}}>Cảm ơn đã sử dụng dịnh vụ!</Text>
-                            <Text style={{textAlign:'center', margin: 7}}>Mã hóa đơn: 0220056798</Text>
-                            <View style={{alignItems:'center',margin: 7}}>
-                                <Button title="Quay về trang chủ" onPress={(e) => this.handleBackToHome(e)}/>
+                            <View style={{alignItems:'center',margin: 7},styles.viewButton}>
+                                <Button color="#5cb85c" title="Tìm kiếm homestay" onPress={() => Actions.Searching1()}  />
                             </View>
-                            <View style={{alignItems:'center',margin: 7}}>
-                                <Button title="xem Lịch sử đặt xe" onPress={(e) => this.handleToHistory(e)} color='#dc3545' />
+                            <View style={{alignItems:'center',margin: 7},styles.viewButton}>
+                                <Button color="#5cb85c" title="Đặt xe đưa đón" onPress={() => Actions.Step1()}/>
+                            </View>
+
+                            <View style={{alignItems:'center',margin: 7},styles.viewButton}>
+                                <Button color="#5cb85c" title="Tìm kiếm quán ăn" onPress={() => Actions.Searching2()}  />
                             </View>
                     </View>
         </ScrollView>
@@ -57,14 +39,14 @@ class Step5 extends Component{
         
     )
 }}
-export default Step5;
+export default Home;
 
 const styles = StyleSheet.create({
     img:{
         width: 80, height: 80
     },
     viewButton: {
-        flex:1 , marginRight:10
+        flex:1 , marginTop:10, width:300,
     },
     headtxt:{
         fontSize:50,

@@ -35,20 +35,20 @@ class Searching extends Component {
             </View>
             <View>
                 <ModalDropdown options={['1 người','2 người', '3 người','4 người', '5 người']} 
-                    style={{textAlign:'center', width:100}} 
-                    textStyle={{textAlign:'center', alignItems:'stretch', zIndex:99}}
+                    style={{textAlign:'center', width:120}} 
+                    textStyle={{textAlign:'center', zIndex:99, height:30,width:100, textAlignVertical:'center'}}
                     defaultValue="1 người"
                     dropdownStyle={{marginTop:5}}
-                    dropdownTextStyle={{textAlign:'center', width:100, }}
+                    dropdownTextStyle={{textAlign:'center', width:120, }}
                     borderWidth={1}
                     borderRadius={5}
                     marginTop={10}
                     />
                 <Image style={{
-                    position:'absolute', width: 12, height: 12, top: 13, left:5, zIndex:-1
+                    position:'absolute', width: 12, height: 12, top: 20, left:5, zIndex:-1
                 }} source={require('./../img/user.png')}/>
                <Image style={{
-                    position:'absolute', width: 12, height: 12, top: 13, right:5, zIndex:-1
+                    position:'absolute', width: 12, height: 12, top: 20, right:5, zIndex:-1
                 }} source={require('./../img/drop-down-arrow.png')}/>
 
             </View>
@@ -115,7 +115,7 @@ class Searching extends Component {
                     fontWeight="bold"
                     
                     margin={15}
-                    color="#b78a62"
+                    color="#5cb85c"
                     onPress={()=> this.setState({isVisible: !this.state.isVisible})}
                 />
             </View>
@@ -124,7 +124,7 @@ class Searching extends Component {
         <View style={{alignItems:'stretch',flex:1,marginBottom:60 }}>
             <View style={{flexDirection:'row'}}>
                 <ModalDropdown
-                    options={["Nội Thành", "Ngoại Thành"]}
+                    options={["Dưới 500.000 VNĐ", "Dưới 1.000.000 VNĐ", "Dưới 2.000.000 VNĐ", "Dưới 5.000.000 VNĐ"]}
                     style={{flex:1, alignItems:'stretch'}}
                     dropdownStyle={{flex:1, height: 72}}
                     dropdownTextStyle={{width:127,textAlign:'center'}}>
@@ -138,7 +138,7 @@ class Searching extends Component {
                     <Text style={{textAlign:"center", backgroundColor:'#dc3545', color:'white', fontSize:16,fontWeight:'bold'}}>Khu Vực</Text>
                 </ModalDropdown>
                 <ModalDropdown
-                    options={["Nội Thành", "Ngoại Thành"]}
+                    options={["Theo giá", "Số phòng trống"]}
                     style={{flex:1,alignItems:'stretch', justifyContent:'center'}}
                     dropdownStyle={{flex:1, height: 72}}
                     dropdownTextStyle={{width:127, textAlign:'center'}}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InputIndex from './InputThueXe2InDex'
-
+import TitleIndex from './TitleThueXeInDex'
 
 import {
   StyleSheet,
@@ -14,6 +14,7 @@ const Step2 = () =>{
     return (
         <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
+        <TitleIndex/>
         <InputIndex/>
         </ScrollView>
       </View>

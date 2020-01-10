@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Router, Scene } from 'react-native-router-flux'
+import Home from './components/Home'
 import Step1 from './components/ThueXeStep1'
 import Step2 from './components/ThueXeStep2'
 import Step3 from './components/ThueXeStep3'
@@ -7,6 +8,10 @@ import Step4 from './components/ThueXeStep4'
 import Step5 from './components/ThueXeStep5'
 import ExampleFour from './components/HistoryBooking'
 import Searching from './components/Timkiem'
+import SearchingFood from './components/TimkiemMonAn'
+import ChiTietDiaDiem from './components/CTDiaDiem'
+import ChiTietHomestay from './components/DatPhong'
+
 import {
   StyleSheet,
   View,
@@ -24,8 +29,22 @@ export default class App extends React.Component {
       <>
       <Router>
       <Scene key="root">
-        <Scene key="Booking">
 
+        <Scene
+              key="CTHomeStay"
+              component={ChiTietHomestay}
+              hideNavBar={true}
+            />
+        <Scene
+              key="Home"
+              component={Home}
+              hideNavBar={true}
+            />
+          <Scene
+              key="CTDiaDiem"
+              component={ChiTietDiaDiem}
+              hideNavBar={true}
+            />
           <Scene
               key="Step1"
               component={Step1}
@@ -61,15 +80,16 @@ export default class App extends React.Component {
               component={ExampleFour}
               title="Lịch sử đặt xe"
             />
-          </Scene>
 
-          <Scene key="Search">
-          <Scene key="Step1"
+          <Scene key="Searching1"
             component={Searching}
-            title="Step1"
-            hideNavBar={true}
+
           />
-        </Scene>
+          <Scene
+              key="Searching2"
+              component={SearchingFood}
+              title="Tìm Kiếm Món Ăn"
+            />
       </Scene>
       
     </Router>
