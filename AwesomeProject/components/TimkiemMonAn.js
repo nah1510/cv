@@ -18,7 +18,7 @@ class SearchingFood extends Component {
     return (
         <ScrollView backgroundColor="white">
             <View style={{backgroundColor:'white', flex:1, alignItems:"center", marginBottom: 30}}>
-            <Text style={{textAlign:"center", fontSize:30, fontWeight:'bold',textTransform:'capitalize'}}>Tìm kiếm món ăn</Text>
+            <Text style={{textAlign:"center", fontSize:30, fontWeight:'bold',textTransform:'capitalize'}}>Tìm kiếm quán ăn</Text>
             <View >
                 <TextInput 
                     style = {styles.input}

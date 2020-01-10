@@ -160,5 +160,8 @@ const styles = StyleSheet.create({
         marginTop:5,
         borderRadius: 10,
     },
+    scrollView:{
+        marginBottom:10,
+    }
 })
 export default DatPhong2;

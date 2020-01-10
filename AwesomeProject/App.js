@@ -93,7 +93,7 @@ export default class App extends React.Component {
           <Scene
               key="Searching2"
               component={SearchingFood}
-              title="Tìm Kiếm Món Ăn"
+              title="Tìm Kiếm Quán Ăn"
             />
       </Scene>
       

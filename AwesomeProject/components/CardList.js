@@ -13,7 +13,7 @@ const CardList = () => {
                     }}
                 />
                 <View style={{flex:1, marginLeft:10}}>
-                    <Text style={{textTransform: "uppercase", color:'#ced4da', letterSpacing:10}}>February 26, 2018</Text>
+                <Text style={{fontSize: 24, color:'#ced4da'}}>February 26, 2018</Text>
                     <Text style={{fontSize: 26, fontWeight:"bold"}}>City Home Nha Trang</Text>
                     <Text style={{fontSize: 12}}>6 khách · 2 phòng ngủ · 2 phòng tắm</Text>
                     <Text style={{fontSize: 12}}>899,100₫/đêm</Text>
@@ -28,7 +28,7 @@ const CardList = () => {
                     }}
                 />
                 <View style={{flex:1, marginLeft:10}}>
-                    <Text style={{textTransform: "uppercase", color:'#ced4da', letterSpacing:10}}>February 26, 2018</Text>
+                    <Text style={{fontSize: 24, color:'#ced4da'}}>February 26, 2018</Text>
                     <Text style={{fontSize: 26, fontWeight:"bold"}}>City Home Nha Trang</Text>
                     <Text style={{fontSize: 12}}>6 khách · 2 phòng ngủ · 2 phòng tắm</Text>
                     <Text style={{fontSize: 12}}>899,100₫/đêm</Text>
@@ -43,7 +43,7 @@ const CardList = () => {
                     }}
                 />
                 <View style={{flex:1, marginLeft:10}}>
-                    <Text style={{textTransform: "uppercase", color:'#ced4da', letterSpacing:10}}>February 26, 2018</Text>
+                    <Text style={{fontSize: 24, color:'#ced4da'}}>February 26, 2018</Text>
                     <Text style={{fontSize: 26, fontWeight:"bold"}}>City Home Nha Trang</Text>
                     <Text style={{fontSize: 12}}>6 khách · 2 phòng ngủ · 2 phòng tắm</Text>
                     <Text style={{fontSize: 12}}>899,100₫/đêm</Text>
@@ -58,7 +58,7 @@ const CardList = () => {
                     }}
                 />
                 <View style={{flex:1, marginLeft:10}}>
-                    <Text style={{textTransform: "uppercase", color:'#ced4da', letterSpacing:10}}>February 26, 2018</Text>
+                <Text style={{fontSize: 24, color:'#ced4da'}}>February 26, 2018</Text>
                     <Text style={{fontSize: 26, fontWeight:"bold"}}>City Home Nha Trang</Text>
                     <Text style={{fontSize: 12}}>6 khách · 2 phòng ngủ · 2 phòng tắm</Text>
                     <Text style={{fontSize: 12}}>899,100₫/đêm</Text>
