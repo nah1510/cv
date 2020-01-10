@@ -34,7 +34,7 @@ const Step3 = () =>{
                placeholderTextColor = "#9a73ef"
                autoCapitalize = "none"
                editable = {false}/>
-
+            <Image source={require('./../img/googlemap.jpg')} style={{height: 200, width:350,marginBottom:20,marginTop:20}}/>
             <View style={{flexDirection: 'row',marginTop:30}}>
                 <View style={{flex:1 , marginRight:10}} >
                     <Button title="Trở về" color = "#ff8d1e" onPress={() => Actions.Step2()}></Button>

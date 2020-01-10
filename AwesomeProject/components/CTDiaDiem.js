@@ -57,7 +57,7 @@ const ChiTietDiaDiem = () =>{
 }
 const styles = StyleSheet.create({
     container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
-    header: { height: 50, backgroundColor: '#5cb85c',fontWeight:'bold' },
+    header: { height: 50, backgroundColor: '#5cb85c' },
     textHeader: { textAlign: 'center', fontWeight: 'bold', marginVertical:10,color:'white' },
     text: { textAlign: 'center', fontWeight: '100', marginVertical:10 },
     textDes: {

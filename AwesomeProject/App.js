@@ -11,7 +11,7 @@ import Searching from './components/Timkiem'
 import SearchingFood from './components/TimkiemMonAn'
 import ChiTietDiaDiem from './components/CTDiaDiem'
 import ChiTietHomestay from './components/DatPhong'
-
+import DatPhong2 from './components/DatPhong2'
 import {
   StyleSheet,
   View,
@@ -31,14 +31,19 @@ export default class App extends React.Component {
       <Scene key="root">
 
         <Scene
-              key="CTHomeStay"
-              component={ChiTietHomestay}
-              hideNavBar={true}
-            />
-        <Scene
               key="Home"
               component={Home}
               hideNavBar={true}
+            />
+        <Scene
+              key="CTHomeStay"
+              component={ChiTietHomestay}
+
+            />
+            <Scene
+              key="DatPhong2"
+              component={DatPhong2}
+              title="Thông tin đặt chỗ và thanh toán"
             />
           <Scene
               key="CTDiaDiem"
@@ -106,6 +111,6 @@ const styles = StyleSheet.create({
 
   },
   scrollView:{
-
+    borderColor:"red",
   }
 });

@@ -36,7 +36,8 @@ const InputIndex = () =>{
                placeholder = "Thông tin thêm"
                placeholderTextColor = "#9a73ef"
                autoCapitalize = "none"/>
-            <View style={{flexDirection: 'row',marginTop:30}}>
+               <Image source={require('./../img/googlemap.jpg')} style={{height: 200, width:350,marginBottom:20}}/>
+            <View style={{flexDirection: 'row',marginTop:30,marginBottom:50}}>
                 <View style={{flex:1 , marginRight:10}} >
                     <Button title="Trở về" color = "#ff8d1e" onPress={() => Actions.Step3()}></Button>
                 </View>

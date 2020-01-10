@@ -4,7 +4,7 @@ import { Actions } from 'react-native-router-flux';
 const CardList = () => {
     return (
         <View>
-        <TouchableOpacity onPress={() => Actions.Step1()}  style={{flexDirection:"row",  marginLeft:10,marginTop:30}}>
+        <TouchableOpacity onPress={() => Actions.CTHomeStay()}  style={{flexDirection:"row",  marginLeft:10,marginTop:30}}>
                 <Image source={require('./../img/hero_2.jpg')} 
                     style={{
                       
@@ -19,7 +19,7 @@ const CardList = () => {
                     <Text style={{fontSize: 12}}>899,100₫/đêm</Text>
                 </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => Actions.Step1()}  style={{flexDirection:"row",  marginLeft:10,marginTop:30}}>
+        <TouchableOpacity onPress={() => Actions.CTHomeStay()}  style={{flexDirection:"row",  marginLeft:10,marginTop:30}}>
                 <Image source={require('./../img/hero_2.jpg')} 
                     style={{
                       
@@ -34,7 +34,7 @@ const CardList = () => {
                     <Text style={{fontSize: 12}}>899,100₫/đêm</Text>
                 </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => Actions.Step1()}  style={{flexDirection:"row",  marginLeft:10,marginTop:30}}>
+        <TouchableOpacity onPress={() => Actions.CTHomeStay()}  style={{flexDirection:"row",  marginLeft:10,marginTop:30}}>
                 <Image source={require('./../img/hero_2.jpg')} 
                     style={{
                       
@@ -49,7 +49,7 @@ const CardList = () => {
                     <Text style={{fontSize: 12}}>899,100₫/đêm</Text>
                 </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => Actions.Step1()}  style={{flexDirection:"row",  marginLeft:10,marginTop:30}}>
+        <TouchableOpacity onPress={() => Actions.CTHomeStay()}  style={{flexDirection:"row",  marginLeft:10,marginTop:30}}>
                 <Image source={require('./../img/hero_2.jpg')} 
                     style={{
                       
